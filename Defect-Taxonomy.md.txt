@@ -1,0 +1,7 @@
+ Requirement Defect Taxonomy
+
+| Requirement | Defect Type | Issue |
+|------------|------------|------|
+| Train should arrive fast | Ambiguity | "fast" is not defined |
+| Any train can use any track | Inconsistency | Can cause collision |
+| System should be efficient | Non-verifiable | Cannot be measured |

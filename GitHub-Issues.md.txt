@@ -1,0 +1,5 @@
+GitHub Issues Tracking
+
+- Issue 1: Track conflict detection missing
+- Issue 2: Invalid time scheduling allowed
+- Issue 3: Train state not updated properly
