@@ -1,0 +1,10 @@
+[TRAIN, TRACK, TIME]
+
+RailwaySystem
+trains : ℙ TRAIN
+tracks : ℙ TRACK
+schedule : TRAIN ↔ TRACK
+departure : TRAIN ↔ TIME
+arrival : TRAIN ↔ TIME
+
+∀ t : TRAIN • arrival(t) > departure(t)
