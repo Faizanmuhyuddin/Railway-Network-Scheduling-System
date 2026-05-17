@@ -1,0 +1,6 @@
+ Validation Checklist
+
+- Train scheduling works correctly ✔
+- Track conflict detection works ✔
+- Invalid timing rejected ✔
+- System state transitions verified ✔
