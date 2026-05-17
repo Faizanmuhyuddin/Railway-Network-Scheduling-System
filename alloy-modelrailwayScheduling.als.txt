@@ -1,0 +1,12 @@
+sig Train {}
+sig Track {}
+
+sig Schedule {
+    train: one Train,
+    track: one Track
+}
+
+fact NoTrackConflict {
+    all s1, s2 : Schedule |
+    s1 != s2 implies s1.track != s2.track
+}
