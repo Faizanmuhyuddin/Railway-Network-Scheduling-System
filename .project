@@ -1,28 +1,10 @@
-class RailwaySystem
+[TRAIN, TRACK, TIME]
 
-types
-TrainId = nat;
-TrackId = nat;
+RailwaySystem
+trains : ℙ TRAIN
+tracks : ℙ TRACK
+schedule : TRAIN ↔ TRACK
+departure : TRAIN ↔ TIME
+arrival : TRAIN ↔ TIME
 
-instance variables
-schedule : map TrainId to TrackId := {|->};
-
-operations
-
-AddSchedule: TrainId * TrackId ==> ()
-AddSchedule(tid, trid) ==
-(
- schedule := schedule munion {tid |-> trid}
-)
-pre tid not in set dom schedule
-post tid in set dom schedule;
-
-RemoveSchedule: TrainId ==> ()
-RemoveSchedule(tid) ==
-(
- schedule := {tid} <-: schedule
-)
-pre tid in set dom schedule
-post tid not in set dom schedule;
-
-end RailwaySystem
+∀ t : TRAIN • arrival(t) > departure(t)
