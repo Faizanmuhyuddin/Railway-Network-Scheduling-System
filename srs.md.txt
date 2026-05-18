@@ -1,0 +1,178 @@
+Software Requirements Specification (SRS)
+Railway Network Scheduling System
+1. Introduction
+
+The Railway Network Scheduling System is designed to manage train scheduling, track allocation, train timing, and conflict detection within a railway network. The system helps railway authorities organize train movements efficiently while ensuring safety and avoiding collisions.
+
+The system automates scheduling operations that are traditionally performed manually. It allocates tracks to trains, manages train arrival and departure timings, monitors train status, and validates schedules to prevent conflicts.
+
+This project uses formal specification methods such as Z notation, VDM-SL, and Alloy modeling to mathematically verify the correctness and safety of the railway scheduling system.
+
+2. Purpose of the System
+
+The purpose of this system is to:
+
+Automate railway scheduling operations
+Reduce human scheduling errors
+Prevent train collisions
+Improve railway safety
+Ensure proper train timing management
+Efficiently utilize railway tracks
+Verify scheduling correctness using formal methods
+3. Objectives
+
+The major objectives of the Railway Network Scheduling System are:
+
+Manage train schedules efficiently
+Allocate tracks to trains automatically
+Prevent scheduling conflicts and collisions
+Monitor train arrival and departure timings
+Maintain accurate scheduling records
+Improve railway network safety
+Ensure consistency of scheduling data
+Support formal verification and validation
+Reduce manual workload of railway staff
+Improve operational efficiency of railway management
+4. Scope of the System
+
+The system covers the following operations:
+
+Train registration
+Track management
+Schedule creation
+Track assignment
+Arrival and departure management
+Conflict detection
+Schedule updating
+Schedule cancellation
+Train status monitoring
+Verification of scheduling rules
+
+The system is intended for railway stations, railway control rooms, and railway network management authorities.
+
+5. Functional Requirements
+
+Functional requirements describe what the system should do.
+
+5.1 Train Management
+System shall add new trains
+System shall remove trains
+System shall update train information
+System shall maintain train records
+System shall assign unique Train IDs
+5.2 Track Management
+System shall add railway tracks
+System shall remove tracks
+System shall update track information
+System shall maintain track availability status
+System shall assign unique Track IDs
+5.3 Schedule Management
+System shall create train schedules
+System shall update schedules
+System shall delete schedules
+System shall store arrival and departure timings
+System shall maintain schedule history
+5.4 Track Allocation
+System shall assign tracks to trains
+System shall prevent multiple trains from using the same track simultaneously
+System shall validate track availability before assignment
+System shall release tracks after train departure
+5.5 Timing Management
+System shall manage arrival timings
+System shall manage departure timings
+System shall ensure arrival time is greater than departure time
+System shall support schedule rescheduling
+5.6 Conflict Detection
+System shall detect track conflicts
+System shall detect overlapping schedules
+System shall generate conflict warnings
+System shall reject invalid schedules
+System shall prevent train collisions
+5.7 Train Status Monitoring
+System shall monitor train status
+System shall update train movement information
+System shall display train location details
+System shall maintain train activity logs
+5.8 Reporting Features
+System shall generate train schedule reports
+System shall generate track usage reports
+System shall generate conflict reports
+System shall generate daily scheduling summaries
+5.9 User Management
+System shall support administrator login
+System shall support authorized user access
+System shall restrict unauthorized modifications
+System shall maintain user activity records
+5.10 Verification and Validation
+System shall verify scheduling correctness
+System shall validate timing constraints
+System shall verify track allocation rules
+System shall support formal verification using Z, VDM-SL, and Alloy
+6. Non-Functional Requirements
+
+Non-functional requirements describe how the system should perform.
+
+6.1 Safety
+System shall ensure railway operational safety
+System shall prevent train collisions
+System shall maintain safe track allocation
+System shall detect unsafe scheduling conditions
+6.2 Reliability
+System shall operate continuously without failure
+System shall maintain accurate scheduling information
+System shall provide consistent outputs
+System shall recover from minor system failures
+6.3 Performance
+System shall process scheduling requests quickly
+System shall support multiple train schedules simultaneously
+System shall minimize scheduling delays
+6.4 Scalability
+System shall support increasing numbers of trains
+System shall support large railway networks
+System shall allow future feature expansion
+6.5 Consistency
+System shall maintain consistent scheduling records
+System shall prevent duplicate track assignments
+System shall ensure valid timing relationships
+6.6 Usability
+System shall provide a user-friendly interface
+System shall provide easy schedule management
+System shall display scheduling information clearly
+6.7 Maintainability
+System shall support easy updates
+System shall allow modification of scheduling rules
+System shall support future maintenance activities
+6.8 Security
+System shall restrict unauthorized access
+System shall protect scheduling data
+System shall support authentication mechanisms
+6.9 Availability
+System shall remain available during railway operations
+System shall minimize downtime
+System shall support continuous access
+6.10 Verification Support
+System shall support formal verification techniques
+System shall support mathematical validation
+System shall support model checking using Alloy
+System shall support specification validation using VDM-SL and Z notation
+7. Constraints
+Each train must have a unique Train ID
+Each track must have a unique Track ID
+A track cannot be assigned to multiple trains simultaneously
+Arrival time must always be greater than departure time
+Only authorized users can modify schedules
+8. Assumptions
+Railway tracks are operational
+Train timing data is accurate
+Users are trained to operate the system
+Network connectivity is available if deployed online
+9. Expected Outcomes
+
+After implementation, the system will:
+
+Improve railway scheduling efficiency
+Reduce scheduling conflicts
+Increase railway safety
+Automate train scheduling operations
+Improve resource utilization
+Support mathematically verified scheduling correctness
